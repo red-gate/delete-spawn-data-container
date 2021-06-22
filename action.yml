@@ -1,0 +1,17 @@
+name: 'Spawn delete data-container action'
+description: 'Delete a spawn data container'
+inputs:
+  dataContainer: 
+    description: 'The data container to delete'
+    required: true
+  additionalArgs:
+    description: 'Additional arguments to provide (e.g flags for a command)'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dataContainer }}
+    - ${{ inputs.additionalArgs }}
