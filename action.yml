@@ -1,4 +1,7 @@
-name: 'Spawn delete data-container action'
+name: 'Delete Spawn Data Container'
+branding:
+  color: purple
+  icon: database
 description: 'Delete a spawn data container'
 inputs:
   dataContainer: 
